@@ -1,6 +1,6 @@
 # Angular Project Template
 
-That is the **frot-end part** of full stack project consisting of (at least) 4 Docker Containers 
+That is the **frontend part** of full stack project consisting of (at least) 4 Docker Containers 
 started with docker-compose file
 - database container (postgres)
 - database user interface container (pgadmin4)
