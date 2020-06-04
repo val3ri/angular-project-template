@@ -5,41 +5,18 @@
     <!--- Note that these columns can be defined in any order.
           The actual rendered columns are set as a property on the row definition" -->
   
-    <!-- name/personalnr column -->
+    <!-- book column -->
     <ng-container matColumnDef="author">
       <th mat-header-cell *matHeaderCellDef>title</th>
       <td mat-cell *matCellDef="let book">{{book.title}}</td>
     </ng-container>
   
-    <!-- personalNr column -->
+    <!-- author column -->
     <ng-container matColumnDef="title">
       <th mat-header-cell *matHeaderCellDef>author</th>
       <td mat-cell *matCellDef="let book"> {{book.author}} </td>
     </ng-container>
   
-    <!-- action column -->
-    <!-- <ng-container matColumnDef="action">
-      <th mat-header-cell *matHeaderCellDef>Aktion</th>
-      <td mat-cell *matCellDef="let projectMember"> -->
-  
-        <!-- button for closing/opening member -->
-        <!-- <button mat-icon-button (click)="changeProjectMemberStatus(projectMember)">
-          <mat-icon *ngIf="projectMember.closeTime === null; else showLock" matTooltip="Sperren den Mitarbeiter">
-            lock_open
-          </mat-icon>
-          <ng-template #showLock>
-            <mat-icon matTooltip="Entsperren den Mitarbeiter">lock</mat-icon>
-          </ng-template>
-        </button>
-  
-        <button mat-icon-button *ngIf="projectMember.closeTime !== null"
-          (click)="removeMember(projectMember)" matTooltip="Mitarbeiter aus dem Projekt entfernen">
-          <mat-icon>delete</mat-icon>
-        </button>
-  
-      </td>
-    </ng-container> -->
-    
   
     <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
     <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>

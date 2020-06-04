@@ -21,7 +21,7 @@ export class LibraryListComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.retrieveBooks();
+
   }
 
   retrieveBooks() {
